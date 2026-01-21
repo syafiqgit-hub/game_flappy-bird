@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <title>Game Flappy Bird | Dev By Syafiq</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+        .footer {
+            position: fixed;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 10px;
+            z-index: 9999;
+        }
+        
+        .game-guide {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.55);
+            color: #fff;
+            font-size: 20px;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-weight: 500;
+            line-height: 1.4;
+            z-index: 999;
+            pointer-events: none;
+        }
+        
+        .high-score {
+            position: fixed;
+            top: 13vh;
+            left: 10px;
+            z-index: 10;
+            font-size: 5.4vh;
+            font-weight: bold;
+            color: #00ffcc;
+            -webkit-text-stroke-width: 1.5px;
+            -webkit-text-stroke-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background"></div>
+    <img src="Bird.png" alt="bird-img" class="bird" id="bird-1">
+    <div class="message">
+        Klik Enter untuk mulai Game
+    </div>
+    <div class="score">
+        <span class="score_title"></span>
+        <span class="score_val"></span>
+    </div>
+
+    <div class="high-score">
+        Best Score : <span id="highScore">0</span>
+    </div>
+
+    <div class="game-guide">
+        PANDUAN :
+        <br> Klik <b>SPASI</b> untuk lompat
+    </div>
+
+    <div class="footer">Dev By @syafiq.bamazruk</div>
+
+</body>
+
+</html>
